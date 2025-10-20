@@ -99,7 +99,7 @@ This repository uses [action-docs](https://github.com/nektos/act/tree/master/doc
 To update the documentation after changing `action.yml`, run:
 
 ```bash
-npm run docs
+pnpm run docs
 ```
 
 This will update the relevant sections in the README. Please commit the changes after running this command.
@@ -108,7 +108,7 @@ This will update the relevant sections in the README. Please commit the changes 
 
 ## Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Contributions are welcome! Please see [CONTRIBUTING.md](./.github/CONTRIBUTING.md) for guidelines.
 
 ## License
 
