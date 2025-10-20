@@ -26,7 +26,7 @@ jobs:
           node-version: "24"
 
       - name: "Restore"
-        run: "npm ci"
+        run: "pnpm ci"
 
       - name: "Docs check"
         run: |
@@ -37,13 +37,13 @@ jobs:
           fi
 
       - name: "Format"
-        run: "npm run format"
+        run: "pnpm run format"
 
       - name: "Lint"
-        run: "npm run lint"
+        run: "pnpm run lint"
 
       - name: "Test"
-        run: "npm run test"
+        run: "pnpm run test"
 
       - name: "Build"
-        run: "npm run build"
+        run: "pnpm run build"
