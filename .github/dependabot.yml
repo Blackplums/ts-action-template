@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      # Check for updates on Sundays
+      day: "sunday"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    target-branch: main

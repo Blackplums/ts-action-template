@@ -1,0 +1,24 @@
+name: "Template action"
+description: "A template for creating GitHub Actions that comments on pull requests"
+author: "GitHub Enablement"
+
+branding:
+  icon: "code"
+  color: "blue"
+
+# Action inputs
+inputs:
+  # GitHub token for API access
+  github-token:
+    description: "GitHub token for API access"
+    required: true
+    default: ${{ github.token }}
+
+# Action outputs
+outputs:
+  comment-id:
+    description: "The ID of the created comment"
+
+runs:
+  using: "node20"
+  main: "dist/index.js"

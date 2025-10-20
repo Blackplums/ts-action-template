@@ -1,0 +1,34 @@
+{
+	"name": "ts-action-template",
+	"version": "0.0.0",
+	"description": "A template for creating github actions with typescript",
+	"exports": "./dist/index.mjs",
+	"main": "dist/index.mjs",
+	"type": "module",
+	"scripts": {
+		"build": "ncc build src/index.ts -o dist",
+		"format": "biome format . --write",
+		"lint": "biome lint .",
+		"test": "vitest run --coverage",
+		"docs": "npx action-docs@latest"
+	},
+	"keywords": [
+		"template",
+		"github",
+		"actions"
+	],
+	"license": "MIT",
+	"dependencies": {
+		"@actions/core": "^1.11.1",
+		"@actions/github": "^6.0.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.6",
+		"@types/node": "^24.8.1",
+		"@vercel/ncc": "^0.38.4",
+		"@vitest/coverage-v8": "^3.2.4",
+		"cross-env": "^10.1.0",
+		"typescript": "^5.9.3",
+		"vitest": "^3.2.4"
+	}
+}
